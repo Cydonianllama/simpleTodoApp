@@ -1,0 +1,112 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height  : 100vh;
+    background-color: #141414;
+}
+input,button,h2,p,li,a,span{  
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    list-style: none;
+}
+.meta-category-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.number-of-tasks{
+    color : gray;
+    font-size: 10px;
+}
+.h2-categories,.category-name-h2{
+    color : rgb(167, 167, 167);
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.task-style,.category-name{
+    color : rgb(216, 216, 216);
+    font-size: 14px;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+.active-li{
+    font-weight: bold;
+}
+.list-categories,.container-horizontal{
+    padding: 24px;
+    border-radius: 12px
+}
+.list-categories{
+    width: 25%;
+}
+/* .list-tasks-container{
+
+}    */
+.list-categories,.list-tasks{
+    padding: 12px;
+}
+.list-tasks{
+
+}
+.container-horizontal{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+    background-color: #202020;
+}
+.actions-tasks{
+    display: flex;
+    justify-content:  flex-end;
+}
+.btn-action-normal{
+    border: none;
+    background: transparent;
+    color :yellow;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+}
+.task-complete{
+    text-decoration: line-through;
+}
+.ml-s{
+    margin-left: 4%;
+}
+.btn-action-normal:hover:disabled ,.btn-action-normal:disabled{
+    color : gray;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+.btn-action-normal:hover{
+    text-decoration: underline;
+}
+.input-normal::placeholder{
+    color : rgb(66, 66, 66) ;
+}
+.input-normal{
+    background: transparent;
+    padding: 5px;
+    border-bottom : 1px solid rgb(75, 75, 75);
+    border-top : none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    color :white;
+
+}   
